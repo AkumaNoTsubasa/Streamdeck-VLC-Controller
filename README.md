@@ -2,6 +2,9 @@
 
 A simple plugin for the Stream Deck adding 12 new buttons to your Stream Deck
 
+<img width="850" height="740" alt="image" src="https://github.com/user-attachments/assets/46683cb3-c66e-4652-8565-323cdb5d2a63" />
+
+
 Play, Pause, Play/Pause, Stop, Last, Next are the core bread and butter buttons but I added more because I missed those in other plugins I found.
 
 Volume can be tapped or held to raise/lower the volume.
