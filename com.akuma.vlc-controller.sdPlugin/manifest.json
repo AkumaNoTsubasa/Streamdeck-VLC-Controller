@@ -1,0 +1,238 @@
+{
+	"Name": "Akumas VLC Controller",
+	"Version": "1.0.0.0",
+	"Author": "Akuma",
+	"Actions": [
+		{
+			"Name": "Play",
+			"UUID": "com.akuma.vlc-controller.play",
+			"Icon": "imgs/actions/play/icon",
+			"Tooltip": "Resume playback in VLC.",
+			"PropertyInspectorPath": "ui/connection.html",
+			"Controllers": [
+				"Keypad"
+			],
+			"States": [
+				{
+					"Image": "imgs/actions/play/key",
+					"TitleAlignment": "middle"
+				}
+			]
+		},
+		{
+			"Name": "Pause",
+			"UUID": "com.akuma.vlc-controller.pause",
+			"Icon": "imgs/actions/pause/icon",
+			"Tooltip": "Pause playback in VLC.",
+			"PropertyInspectorPath": "ui/connection.html",
+			"Controllers": [
+				"Keypad"
+			],
+			"States": [
+				{
+					"Image": "imgs/actions/pause/key",
+					"TitleAlignment": "middle"
+				}
+			]
+		},
+		{
+			"Name": "Play / Pause",
+			"UUID": "com.akuma.vlc-controller.play-pause",
+			"Icon": "imgs/actions/play-pause/icon",
+			"Tooltip": "Toggle play and pause. The key reflects whether VLC is currently playing.",
+			"PropertyInspectorPath": "ui/connection.html",
+			"Controllers": [
+				"Keypad"
+			],
+			"States": [
+				{
+					"Image": "imgs/actions/play-pause/key",
+					"TitleAlignment": "middle"
+				},
+				{
+					"Image": "imgs/actions/play-pause/key-playing",
+					"TitleAlignment": "middle"
+				}
+			]
+		},
+		{
+			"Name": "Stop",
+			"UUID": "com.akuma.vlc-controller.stop",
+			"Icon": "imgs/actions/stop/icon",
+			"Tooltip": "Stop playback in VLC.",
+			"PropertyInspectorPath": "ui/connection.html",
+			"Controllers": [
+				"Keypad"
+			],
+			"States": [
+				{
+					"Image": "imgs/actions/stop/key",
+					"TitleAlignment": "middle"
+				}
+			]
+		},
+		{
+			"Name": "Next",
+			"UUID": "com.akuma.vlc-controller.next",
+			"Icon": "imgs/actions/next/icon",
+			"Tooltip": "Skip to the next track.",
+			"PropertyInspectorPath": "ui/connection.html",
+			"Controllers": [
+				"Keypad"
+			],
+			"States": [
+				{
+					"Image": "imgs/actions/next/key",
+					"TitleAlignment": "middle"
+				}
+			]
+		},
+		{
+			"Name": "Previous",
+			"UUID": "com.akuma.vlc-controller.previous",
+			"Icon": "imgs/actions/previous/icon",
+			"Tooltip": "Return to the previous track.",
+			"PropertyInspectorPath": "ui/connection.html",
+			"Controllers": [
+				"Keypad"
+			],
+			"States": [
+				{
+					"Image": "imgs/actions/previous/key",
+					"TitleAlignment": "middle"
+				}
+			]
+		},
+		{
+			"Name": "Volume Up",
+			"UUID": "com.akuma.vlc-controller.volume-up",
+			"Icon": "imgs/actions/volume-up/icon",
+			"Tooltip": "Increase the volume. Hold to ramp up gradually.",
+			"PropertyInspectorPath": "ui/volume-up.html",
+			"Controllers": [
+				"Keypad"
+			],
+			"States": [
+				{
+					"Image": "imgs/actions/volume-up/key",
+					"TitleAlignment": "middle"
+				}
+			]
+		},
+		{
+			"Name": "Volume Down",
+			"UUID": "com.akuma.vlc-controller.volume-down",
+			"Icon": "imgs/actions/volume-down/icon",
+			"Tooltip": "Decrease the volume. Hold to ramp down gradually.",
+			"PropertyInspectorPath": "ui/volume-down.html",
+			"Controllers": [
+				"Keypad"
+			],
+			"States": [
+				{
+					"Image": "imgs/actions/volume-down/key",
+					"TitleAlignment": "middle"
+				}
+			]
+		},
+		{
+			"Name": "Shuffle",
+			"UUID": "com.akuma.vlc-controller.shuffle",
+			"Icon": "imgs/actions/shuffle/icon",
+			"Tooltip": "Toggle VLC's shuffle. The key reflects whether shuffle is currently on.",
+			"PropertyInspectorPath": "ui/connection.html",
+			"Controllers": [
+				"Keypad"
+			],
+			"States": [
+				{
+					"Image": "imgs/actions/shuffle/key",
+					"TitleAlignment": "middle"
+				},
+				{
+					"Image": "imgs/actions/shuffle/key-on",
+					"TitleAlignment": "middle"
+				}
+			]
+		},
+		{
+			"Name": "Loop",
+			"UUID": "com.akuma.vlc-controller.loop",
+			"Icon": "imgs/actions/loop/icon",
+			"Tooltip": "Cycle VLC's loop mode: off, loop the whole playlist, repeat the current track.",
+			"PropertyInspectorPath": "ui/connection.html",
+			"Controllers": [
+				"Keypad"
+			],
+			"States": [
+				{
+					"Image": "imgs/actions/loop/key",
+					"TitleAlignment": "middle"
+				},
+				{
+					"Image": "imgs/actions/loop/key-all",
+					"TitleAlignment": "middle"
+				},
+				{
+					"Image": "imgs/actions/loop/key-one",
+					"TitleAlignment": "middle"
+				}
+			]
+		},
+		{
+			"Name": "Load Playlist",
+			"UUID": "com.akuma.vlc-controller.load-playlist",
+			"Icon": "imgs/actions/load-playlist/icon",
+			"Tooltip": "Load a predefined playlist. Hold to append instead of replacing.",
+			"PropertyInspectorPath": "ui/load-playlist.html",
+			"Controllers": [
+				"Keypad"
+			],
+			"States": [
+				{
+					"Image": "imgs/actions/load-playlist/key",
+					"TitleAlignment": "middle"
+				}
+			]
+		},
+		{
+			"Name": "Track Title",
+			"UUID": "com.akuma.vlc-controller.track-title",
+			"Icon": "imgs/actions/track-title/icon",
+			"Tooltip": "Show the title of the track currently playing in VLC.",
+			"PropertyInspectorPath": "ui/track-title.html",
+			"Controllers": [
+				"Keypad"
+			],
+			"States": [
+				{
+					"Image": "imgs/actions/track-title/key",
+					"TitleAlignment": "top"
+				}
+			]
+		}
+	],
+	"Category": "VLC Controller",
+	"CategoryIcon": "imgs/plugin/category-icon",
+	"CodePath": "bin/plugin.js",
+	"Description": "Control VLC media player from your Stream Deck: playback, volume, shuffle, playlist loading, and live track title.",
+	"Icon": "imgs/plugin/marketplace",
+	"SDKVersion": 3,
+	"Software": {
+		"MinimumVersion": "7.1"
+	},
+	"OS": [
+		{
+			"Platform": "mac",
+			"MinimumVersion": "12"
+		},
+		{
+			"Platform": "windows",
+			"MinimumVersion": "10"
+		}
+	],
+	"Nodejs": {
+		"Version": "24"
+	},
+	"UUID": "com.akuma.vlc-controller"
+}

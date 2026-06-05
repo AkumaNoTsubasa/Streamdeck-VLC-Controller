@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+	<title>Volume Up Settings</title>
+	<meta charset="utf-8" />
+	<script src="https://sdpi-components.dev/releases/v4/sdpi-components.js"></script>
+</head>
+
+<body>
+	<sdpi-item label="VLC Host">
+		<sdpi-textfield setting="host" global placeholder="127.0.0.1"></sdpi-textfield>
+	</sdpi-item>
+	<sdpi-item label="Port">
+		<sdpi-textfield setting="port" global placeholder="8080"></sdpi-textfield>
+	</sdpi-item>
+	<sdpi-item label="Password">
+		<sdpi-password setting="password" global></sdpi-password>
+	</sdpi-item>
+
+	<sdpi-item label="Step">
+		<sdpi-range setting="stepPercent" min="1" max="25" step="1" default="5" showlabels>
+			<span slot="min">1%</span>
+			<span slot="max">25%</span>
+		</sdpi-range>
+	</sdpi-item>
+	<sdpi-item label="Limit">
+		<sdpi-checkbox setting="capAt100" label="Cap at 100%" checked></sdpi-checkbox>
+	</sdpi-item>
+</body>
+
+</html>

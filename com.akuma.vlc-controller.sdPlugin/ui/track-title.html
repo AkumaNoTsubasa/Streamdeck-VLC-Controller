@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+	<title>Track Title Settings</title>
+	<meta charset="utf-8" />
+	<script src="https://sdpi-components.dev/releases/v4/sdpi-components.js"></script>
+</head>
+
+<body>
+	<sdpi-item label="VLC Host">
+		<sdpi-textfield setting="host" global placeholder="127.0.0.1"></sdpi-textfield>
+	</sdpi-item>
+	<sdpi-item label="Port">
+		<sdpi-textfield setting="port" global placeholder="8080"></sdpi-textfield>
+	</sdpi-item>
+	<sdpi-item label="Password">
+		<sdpi-password setting="password" global></sdpi-password>
+	</sdpi-item>
+
+	<sdpi-item label="Line Length">
+		<sdpi-range setting="lineLength" min="6" max="20" step="1" default="10" showlabels>
+			<span slot="min">6</span>
+			<span slot="max">20</span>
+		</sdpi-range>
+	</sdpi-item>
+</body>
+
+</html>

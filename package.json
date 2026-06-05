@@ -1,0 +1,27 @@
+{
+	"name": "akumas-vlc-controller",
+	"version": "1.0.0",
+	"description": "Control VLC media player from your Stream Deck.",
+	"author": "Akuma",
+	"license": "GPL-3.0-or-later",
+	"type": "module",
+	"scripts": {
+		"build": "rollup -c",
+		"watch": "rollup -c -w --watch.onEnd=\"streamdeck restart com.akuma.vlc-controller\""
+	},
+	"dependencies": {
+		"@elgato/streamdeck": "^2.1.0"
+	},
+	"devDependencies": {
+		"@resvg/resvg-js": "^2.6.2",
+		"@rollup/plugin-commonjs": "^29.0.2",
+		"@rollup/plugin-node-resolve": "^15.2.2",
+		"@rollup/plugin-terser": "^1.0.0",
+		"@rollup/plugin-typescript": "^12.1.0",
+		"@tsconfig/node20": "^20.1.2",
+		"@types/node": "~24.1.0",
+		"rollup": "^4.0.2",
+		"tslib": "^2.6.2",
+		"typescript": "^5.2.2"
+	}
+}
